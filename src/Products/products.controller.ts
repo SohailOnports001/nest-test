@@ -21,7 +21,7 @@ export class ProductsController{
         private readonly productServices: ProductServices,
         private jwtService : JwtService
         ){
-        console.log("Products");
+        // console.log("Products");
     }
     
     @Get('getAllProducts')

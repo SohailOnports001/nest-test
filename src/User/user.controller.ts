@@ -4,7 +4,6 @@ import {
     Post, 
     Body,
     Headers,
-    Header,
     BadRequestException,
     UnauthorizedException
 } from '@nestjs/common';
@@ -18,7 +17,7 @@ export class UsersController{
         private readonly userServices: UserService,
         private jwtService: JwtService
         ){
-        console.log("User");
+        // console.log("User");
     }
     @Post('/register')
     async registerUser(
